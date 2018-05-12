@@ -8,7 +8,7 @@ public class Error_Message {//class contains error messages and code error (seve
 
 
     Content getMessage (int i) {//Return object with the type "Content".We print word "Content" because this method must contain this type "Content (String message , int err_severity)"
-        if (i >= 0 && i<messages.length) return  new Content (messages[i],code_error[i]);// we bind area element and code error  with Content class message and err severity
+        if (i >= 0 && i<messages.length) return  new Content (messages[i],code_error[i]);// we bind array element and code error  with Content class message and err severity
         return  new Content( "This is an error, there is not this index!!!! ", 0);
     }
 
